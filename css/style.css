@@ -1,0 +1,144 @@
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Veryblue: hsl(229, 23%, 23%);
+    --Darkblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+    --nameStats: 18px
+}
+
+* {
+    font-family: 'Kumbh Sans';
+    text-align: center;
+}
+
+body {
+    background-color: var(--Darkcyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: -900px -1000px, 700px 450px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.child {
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 375px;
+    width: 400px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.child .img {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.child .pfp {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: calc(50% - 50px);
+    top: 80px
+}
+
+.child .pfp img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    height: 100px;
+}
+
+.elements {
+    padding-top: 70px;
+}
+
+.child .name {
+    font-style: var(--nameStats);
+    font-weight: 700;
+    color: var(--Veryblue);
+}
+
+.child .name span {
+    font-weight: 400;
+    color: var(--Darkblue);
+}
+
+.child .con {
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+
+/* .hr {
+    height: 0.09px;
+    width: 400px;
+    background-color: var(--Darkgray);
+    margin-bottom: 30px;
+    margin-top: 10px;
+} */
+
+.stats {
+    border-top: 1px solid var(--Darkgray);
+    padding-top: 25px;
+}
+
+.stats .element {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.stats .last-e {
+    margin-right: 0;
+}
+
+.stats .element .num {
+    font-size: var(--nameStats);
+    font-weight: 900;
+    color: var(--Veryblue);
+}
+
+.stats .element .text {
+    color: var(--Darkblue);
+    font-size: 16px;
+}
+

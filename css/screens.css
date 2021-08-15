@@ -1,0 +1,18 @@
+@media (min-width: 0) and (max-width: 450px) {
+    .child {
+        width: 250px;
+    }
+
+    .stats .element {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .attribution {
+        font-size: 9px;
+    }
+
+    body {
+        background-position: -100px -50px, 100px 400px;
+    }
+}
